@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+html[theme=dark-mode] img {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+html {
+  transition: color 300ms, background-color 300ms;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.card-transition:hover {
+  transform: scale(1.05);
+  transition: all ease-in-out 0.3s;
+}
+
+.color-link-1 {
+  color: #5abdb2;
+}
+
+.color-link {
+  color: black;
+}
+.color-link:hover {
+  color: #5abdb2;
+}
+
+.button-link {
+  color: black !important;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding-block: 0.5rem;
+  padding-inline: 3rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.button-link:hover {
+  color: white !important;
+  border: 1px solid #5abdb2;
+  background-color: #5abdb2;
+  padding-inline: 2.9rem !important;
+  letter-spacing: 2px;
+  transition: all ease-in-out 0.2s;
+}
+
+.sidebar-left {
+  position: fixed;
+  height: 100%;
+  width: 4em;
+  border-right: 1px dotted;
+  display: grid;
+  align-content: space-between;
+  background-color: white;
+  z-index: 999;
+}
+
+.sidebar-right {
+  position: fixed;
+  right: 0;
+  height: 100%;
+  border-left: 1px dotted;
+  width: 4em;
+  display: grid;
+  align-content: space-between;
+  background-color: white;
+  z-index: 999;
+}
+
+.wrapper .container {
+  height: 98vh;
+}
+.wrapper .index-container .btn-good {
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+}
+.wrapper .about-section {
+  background: white;
+}
+.wrapper .about-section::before {
+  content: "";
+  display: block;
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  border-right: 100vw solid transparent;
+  border-bottom: 7vh solid #f5f5f5;
+}
+.wrapper .about-section .container {
+  display: grid;
+  align-content: center;
+}
+.wrapper .services-section {
+  background: #f5f5f5 !important;
+}
+.wrapper .services-section .container {
+  display: grid;
+  align-content: center;
+}
+.wrapper .technology-section .card {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .contact-section .container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.wrapper .contact-section .submit-btn {
+  text-decoration: none;
+  color: black;
+}/*# sourceMappingURL=main.css.map */
